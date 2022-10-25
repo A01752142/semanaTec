@@ -4,9 +4,9 @@ from fileinput import filename
 from unicodedata import name
 from flask import Flask, request, jsonify, render_template
 from werkzeug.utils import secure_filename
-from joblub import load
+from joblib import load
 import numpy as np
-import operatingsystem as os
+import os
 
 
 
