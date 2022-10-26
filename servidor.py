@@ -45,6 +45,7 @@ def modeloFile():
         sulfatos = []
         pH = []
         alcohol = []
+        palabras = []
         for palabras in f:
             if palabras == "sulfatos":
                 sulfatos.extend(palabras + 1.split())
