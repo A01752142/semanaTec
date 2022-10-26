@@ -42,19 +42,7 @@ def modeloFile():
     f.save(path)
     file = open(path,'r')
     for line in file:
-        sulfatos = []
-        pH = []
-        alcohol = []
-        palabras = []
-        for palabras in f:
-            if palabras == "sulfatos":
-                sulfatos.extend(palabras + 1.split())
-            elif palabras == "pH":
-                pH.extend(palabras + 1.split())
-            elif palabras == "alcohol":
-                alcohol.extend(palabras + 1.split())
-            print ("datos recavados" , sulfatos,pH,alcohol) 
-       # print(line)
+        print(line)
     return jsonify({"Resultado":"datos recibidos"})
 
 
